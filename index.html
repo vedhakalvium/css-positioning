@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Webpage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <script type="module" src="script.js"></script>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      color: black;
+      height: 200vh;
+    }
+    /* sticky position */
+    .head {
+      position: sticky;
+      top: 0px;
+    }
+    #img1 {
+      margin-left: 640px;
+    }
+    h1,
+    div {
+      text-align: center;
+      /* static position */
+      position: static;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      gap: 0.5rem;
+      border-bottom: solid 1px #aaa;
+      background-color: rgb(250, 10, 90);
+    }
+    a:hover {
+      background-color: yellow;
+    }
+
+    nav a {
+      min-width: 10rem;
+      padding: 10px;
+      border-radius: 1px;
+      border: solid 1px black;
+    }
+
+    nav a[aria-current='page'] {
+      font-weight: 900;
+      color: black;
+      background-color: rgb(200, 20, 90);
+      position: sticky;
+    }
+  </style>
+  <body>
+    <nav class="head">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">About</a>
+      <a href="/page3.html">Details</a>
+    </nav>
+    <main>
+      <img
+        id="img1"
+        src="data:image/png;base64,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"
+      />
+      <h1>#Engineered Differently</h1>
+    </main>
+    <div class="div">
+      India’s 1st Liberal Engineering Curriculum designed by the top CXOs of the
+      Tech Industry. Skilling courses to make you a MERN-Stack Developer even
+      before you graduate. <br />It is Completely Based on MIT Human Skills
+      framework that make a Future Global Leader.
+    </div>
+    <div class="div">
+      <p>The Best UG program in Computer science.</p>
+      <img
+        id="img2"
+        src="https://soc.yenepoya.edu.in/wp-content/uploads/2023/03/thumbnail-scaled-1.webp"
+        width="1000px"
+      />
+      <p>
+        Liberate The Engineer In You!<br />
+        A 4-year, Full-time, On-campus, Work-integrated Under Graduate Program
+        in Computer Science Engineering.<br />
+        <em>Program Outcomes</em><br />
+        1.Earn up to INR 50,000 per month in stipends while you study.<br />
+        2.End of 1st Year Placements.<br />
+        3.Graduate with a 3-year work experience.<br />
+        4.Bag 7-figure package in final placements.<br />
+        5.Become an ace software professional.<br />
+      </p>
+    </div>
+  </body>
+</html>

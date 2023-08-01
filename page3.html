@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Details</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <style>body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    height: 200vh;
+    text-align:center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 0.5rem;
+    border-bottom: solid 1px #aaa;
+    background-color: rgb(250, 10, 90);
+  }
+  a:hover {
+    background-color: yellow;
+  }
+  
+  nav a {
+    min-width: 10rem;
+    padding: 10px;
+    border-radius: 1px;
+    border: solid 1px black;
+  }
+  
+  nav a[aria-current='page'] {
+    font-weight: 900;
+    color: black;
+    background-color: rgb(221, 72, 105);
+  }
+  /* relative position */
+  .links{
+  position: relative;
+  margin-top:20px;
+  line-height: 3;
+  text-align: center;
+  border: 1px solid red;
+  padding: 20px;
+  }
+  /* sticky position */
+  .head{
+    position: sticky;
+    top:0px;
+  }
+  </style>
+  <body>
+    <nav class=head>
+      <a href="/">Home</a>
+      <a href="/page2.html">About</a>
+      <a href="/page3.html" aria-current="page">Details</a>
+    </nav>
+    <main>
+      <h1>JOIN KALVIUM!! Take A KQ TEST!</h1>
+    </main>
+    <img class="move" src="https://i0.wp.com/blog.kalvium.com/wp-content/uploads/2023/03/KQ-Challenges-Kalvium.jpg">
+   <div class="links">
+      <p> REFER LINKS:</p>
+    <a href="https://kalvium.com/admission-process/">ADMISSION PROCESS</a><br>
+    <a href="https://kalvium.com/program/">Know more about program</a><br>
+    <a href="https://kalvium.com/coimbatore-campus/">campus:Coimbatore</a><br>
+    <a href="https://kalvium.com/">How to move further?</a><br>
+  </div>
+  </body>
+</html>

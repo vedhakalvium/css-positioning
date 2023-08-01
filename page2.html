@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>about</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <style>
+    /* absolute position */
+  body{
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    height: 200vh;
+    position:"absolute";
+    left:100px;
+    top:50px;
+  }
+  /* sticky position */
+  .head{
+    position:sticky;
+    top:0px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 0.5rem;
+    border-bottom: solid 1px #aaa;
+    background-color: rgb(250, 10, 90);
+  }
+  a:hover {
+    background-color: yellow;
+  }
+  
+  nav a {
+    min-width: 10rem;
+    padding: 10px;
+    border-radius: 1px;
+    border: solid 1px black;
+  }
+  nav a[aria-current='page'] {
+    font-weight: 900;
+    color: black;
+    background-color: rgb(221, 72, 105);
+  }
+  /* fixed position */
+  #fix{
+    background-color:blue;
+    position:fixed;
+    left:700px;
+    top:10px;
+  }
+  /* static position */
+  .span1 {
+  position: static;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+  padding: 40px;
+}
+  </style>
+  <body>
+    <nav class="head">
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">About</a>
+      <a href="/page3.html">Details</a>
+    </nav>
+    <main>
+      <h1><p>What is kalvium?</p></h1>
+      <p>Our Students would tell "The best!"</p>
+    </main>
+      <div> <span id="fix">About Kalvium</span>
+        <ul class="span1"><li>Students With Industry Skills​</li>
+<li>Full-stack: Trained on backend, frontend, full-stack web development.</li>
+<li>Professional: Skills taught in a professional open-office environment from Day 1.</li>
+<li>Proof: A large open-source project on github for you to verify skills.</li>
+<li>Productive on Day 1: Worked on project using industry-standard git-flow, and SDLC, including code-reviews and deployments.</li>
+<li>Designed For Hiring-Managers​​</li>
+<li>12 month, 30 hours/week internships: Plan long term, with attrition proof talent.</li><li>Internship integrated into the undergraduate program.</li> You now no need to take stress "for exams" or "I have a project submission" take a chill pill.</ul>
+
+<!-- <span class="span2">Our Vision:
+      Our vision is to challenge and transform the undergraduate engineering learning space by introducing a truly experiential leading-edge curriculum that will help meritorious students achieve their career aspirations in the tech world.<br><br><br>
+      our Mission:
+      Our Mission is to offer internships at the end of 1st year to eligible students.<br><br><br>Our Values:
+      Our Values is to create growth mindsets in our squads.<br><br><br><br>
+      INDIA'S 1st LIBERAL ENGINEERING PROGRAM.<br> -->
+    </span>
+    </div>
+  </body>
+</html>
